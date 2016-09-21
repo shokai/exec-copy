@@ -14,8 +14,8 @@ export default function copy (str, onError) {
           document.execCommand('copy')
   document.body.removeChild(input)
   if (!result) {
-    if (typeof onError === 'function') return onError(str)
-    window.prompt('Copy', str) // fallback
+    if (typeof onError === 'function') onError(str)
+    else window.prompt('Copy', str) // fallback
   }
   return result
 }
