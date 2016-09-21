@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 var execCopy = require('../')
 
 window.addEventListener('load', function (e) {
