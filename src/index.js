@@ -1,7 +1,3 @@
-function stringLength (str) {
-  return Array.from(str).length
-}
-
 export default function copy (str, onError) {
   if (typeof str !== 'string') return
   const input = document.createElement('input')
@@ -12,7 +8,7 @@ export default function copy (str, onError) {
   input.style.top = document.body.scrollTop + 'px'
   input.value = str
   input.focus()
-  input.setSelectionRange(0, stringLength(str))
+  input.setSelectionRange(0, str.length)
   const result = document.execCommand('copy')
   document.body.removeChild(input)
   if (!result) {
