@@ -9,10 +9,13 @@ export default function copy (str, onError) {
   input.value = str
   input.focus()
   input.setSelectionRange(0, str.length)
-  const result = document.execCommand('copy')
+  const result =
+          typeof document.execCommand === 'function' &&
+          document.execCommand('copy')
   document.body.removeChild(input)
   if (!result) {
     if (typeof onError === 'function') return onError(str)
     window.prompt('Copy', str) // fallback
   }
+  return result
 }
