@@ -18,16 +18,16 @@ button.addEventListener('click', function (e) {
 
 ### Fallback
 
-Some browser doesnot have `execCommand('copy')` (e.g. safari). For fallback, This library automatically open `window.prompt`.
+Some browser (e.g. Safari) doesnot have `execCommand('copy')`. For fallback, This library automatically open `window.prompt`.
 
-(image here)
+![fallback](https://gyazo.com/ad9e163f57f888b5d31d13ab6cec269a.png)
 
 
-### Overwrite fallback
+Also you can overwrite fallback if you need.
 
 ```javascript
 execCopy('this is copied text!!', function (str) {
-  /* do something when execCommand('copy') is not available */
+  // do something when execCommand('copy') is not available
 })
 ```
 
