@@ -7,8 +7,9 @@
     "build": "babel src/ --out-dir lib/ --source-maps inline",
     "watch": "npm run build -- --watch",
     "browserify": "browserify --verbose -t [ babelify ] sample/source.js -o sample/bundle.js",
+    "mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
     "standard": "standard",
-    "test": "npm run standard",
+    "test": "npm run mocha && npm run standard",
     "clean": "rm -rf lib/"
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
@@ -20,6 +21,8 @@
     "babel-register": "^6.14.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
     "standard": "^8.1.0"
   },
   "keywords": [
