@@ -1,6 +1,6 @@
 {
   "name": "exec-copy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Copy text to clipboard using execCommand('copy') on Web browser",
   "main": "index.js",
   "scripts": {
@@ -35,8 +35,7 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shokai/exec-copy.git"
