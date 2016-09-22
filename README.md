@@ -5,6 +5,7 @@ Copy text to clipboard using `execCommand('copy')` on Web browser.
 - https://github.com/shokai/exec-copy
 - https://npmjs.com/package/exec-copy
 
+[![CircleCI](https://circleci.com/gh/shokai/exec-copy.svg?style=svg)](https://circleci.com/gh/shokai/exec-copy)
 
 ## Usage
 
