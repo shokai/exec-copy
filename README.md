@@ -30,3 +30,13 @@ execCopy('this is copied text!!', function (str) {
   /* do something when execCommand('copy') is not available */
 })
 ```
+
+
+## Sample
+
+build sample code (`./sample/source.js`)
+
+    % npm i
+    % npm run browserify
+
+open `./sample/index.html`
