@@ -31,5 +31,18 @@
     "clipboard",
     "execCommand",
     "browser"
-  ]
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shokai/exec-copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shokai/exec-copy/issues"
+  },
+  "homepage": "https://github.com/shokai/exec-copy#readme"
 }
