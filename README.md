@@ -35,9 +35,12 @@ execCopy('this is copied text!!', function (str) {
 
 ## Sample
 
+- https://shokai.github.io/exec-copy/sample/
+
 build sample code (`./sample/source.js`)
 
     % npm i
+    % npm run build
     % npm run browserify
 
 open `./sample/index.html`
