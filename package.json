@@ -1,7 +1,7 @@
 {
   "name": "exec-copy",
   "version": "0.0.1",
-  "description": "",
+  "description": "Copy text to clipboard using execCommand('copy') on Web browser",
   "main": "index.js",
   "scripts": {
     "build": "babel src/ --out-dir lib/ --source-maps inline",
@@ -22,5 +22,11 @@
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "standard": "^8.1.0"
-  }
+  },
+  "keywords": [
+    "copy",
+    "clipboard",
+    "execCommand",
+    "browser"
+  ]
 }

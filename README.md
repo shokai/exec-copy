@@ -1,12 +1,12 @@
 # exec-copy
 
+Copy text to clipboard using `execCommand('copy')` on Web browser.
+
 - https://github.com/shokai/exec-copy
 - https://npmjs.com/package/exec-copy
 
 
 ## Usage
-
-copy text to clipboard using `execCommand('copy')`.
 
 ```javascript
 var execCopy = require('exec-copy')
@@ -18,7 +18,7 @@ button.addEventListener('click', function (e) {
 
 ### fallback
 
-When `execCommand('copy')` is not available, this library automatically open window.prompt for fallback.
+Some browser doesnot have `execCommand('copy')` (e.g. safari). For fallback, This library automatically open `window.prompt`.
 
 (image here)
 
@@ -27,6 +27,6 @@ You can overwrite it.
 
 ```javascript
 execCopy('this is copied text!!', function (str) {
-  window.prompt('Copy text', str)
+  /* do something when execCommand('copy') is not available */
 })
 ```
