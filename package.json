@@ -1,6 +1,6 @@
 {
   "name": "exec-copy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Copy text to clipboard using execCommand('copy') on Web browser",
   "main": "index.js",
   "scripts": {
