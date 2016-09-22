@@ -10,7 +10,8 @@
     "mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
     "standard": "standard",
     "test": "npm run mocha && npm run standard",
-    "clean": "rm -rf lib/"
+    "clean": "rm -rf lib/",
+    "push-gh-pages": "git status -s | grep '.' && echo 'you should commit before push-gh-pages' || (git add -f ./sample && git commit -m 'push gh-pages' && git push -f origin HEAD:gh-pages; git reset --hard HEAD^)"
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
