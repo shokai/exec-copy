@@ -39,8 +39,7 @@ execCopy('this is copied text!!', function (str) {
 
 build sample code (`./sample/source.js`)
 
-    % npm i
+    % npm install
     % npm run build
-    % npm run browserify
 
 open `./sample/index.html`

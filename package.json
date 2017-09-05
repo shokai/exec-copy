@@ -4,12 +4,12 @@
   "description": "Copy text to clipboard using execCommand('copy') on Web browser",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ --out-dir lib/ --source-maps inline",
-    "watch": "npm run build -- --watch",
-    "browserify": "browserify --verbose -t [ babelify ] sample/source.js -o sample/bundle.js",
-    "mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
-    "standard": "standard",
-    "test": "npm run mocha && npm run standard",
+    "build": "run-s build:*",
+    "build:babel": "babel src/ --out-dir lib/ --source-maps inline",
+    "build:browserify": "browserify --verbose -t [ babelify ] sample/source.js -o sample/bundle.js",
+    "test": "run-s test:*",
+    "test:mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
+    "test:standard": "standard",
     "clean": "rm -rf lib/",
     "push-gh-pages": "git status -s | grep '.' && echo 'you should commit before push-gh-pages' || (git add -f ./sample && git commit -m 'push gh-pages' && git push -f origin HEAD:gh-pages; git reset --hard HEAD^)"
   },
@@ -24,6 +24,7 @@
     "browserify": "^13.1.0",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
+    "npm-run-all": "^4.1.1",
     "standard": "^8.1.0"
   },
   "keywords": [
