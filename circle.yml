@@ -1,14 +1,13 @@
 machine:
   node:
-    version: 6.5.0
+    version: 8.4.0
 
 dependencies:
   override:
-    - npm prune
     - npm install
 
 test:
   override:
     - npm run build
-    - npm run mocha
-    - npm run standard
+    - npm run test:mocha
+    - npm run test:standard
