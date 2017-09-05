@@ -6,7 +6,7 @@ var execCopy = require('../')
 window.addEventListener('load', function (e) {
   var btn = document.getElementById('btnCopy')
   btn.addEventListener('click', function (e) {
-    execCopy('this is copied text!!')
+    execCopy(['this is', 'multi line', 'copied text!!'].join('\n'))
     alert('done!')
   })
 })
