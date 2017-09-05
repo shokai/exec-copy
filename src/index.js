@@ -1,7 +1,8 @@
 export default function copy (str, onError) {
   if (typeof str !== 'string') return
   if (!window || !document) return
-  const input = document.createElement('input')
+  const input = (str.includes('\n'))
+  ? document.createElement('textarea') : document.createElement('input')
   document.body.appendChild(input)
   input.setAttribute('readonly', true)
   input.style.position = 'absolute'
