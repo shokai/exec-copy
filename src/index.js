@@ -6,7 +6,7 @@ export default function copy (str, onError) {
   textarea.setAttribute('readonly', true)
   textarea.style.position = 'absolute'
   textarea.style.left = '-1000px'
-  textarea.style.top = document.body.scrollTop + 'px'
+  textarea.style.top = (window.scrollY || document.body.scrollTop) + 'px'
   textarea.value = str
   textarea.focus()
   textarea.setSelectionRange(0, str.length)
