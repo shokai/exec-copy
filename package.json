@@ -8,7 +8,6 @@
     "build:browserify": "browserify --verbose -t [ babelify ] sample/source.js -o sample/bundle.js",
     "test": "run-s test:*",
     "test:mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
-    "test:standard": "standard",
     "push-gh-pages": "git status -s | grep '.' && echo 'you should commit before push-gh-pages' || (git add -f ./sample && git commit -m 'push gh-pages' && git push -f origin HEAD:gh-pages; git reset --hard HEAD^)"
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
@@ -22,8 +21,7 @@
     "browserify": "^14.4.0",
     "chai": "^4.1.2",
     "mocha": "^3.5.0",
-    "npm-run-all": "^4.1.1",
-    "standard": "^10.0.3"
+    "npm-run-all": "^4.1.1"
   },
   "keywords": [
     "copy",
@@ -34,7 +32,6 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shokai/exec-copy.git"
