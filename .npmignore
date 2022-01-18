@@ -1,7 +1,6 @@
 test/
 tmp/
 .babelrc
-.eslintrc.json
 package-lock.json
 *.log
 *.log.*
