@@ -27,3 +27,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run test:mocha
+      - run: npm run prettier-check
