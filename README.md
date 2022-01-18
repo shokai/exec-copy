@@ -23,7 +23,6 @@ Some browser (e.g. Safari) doesnot have `execCommand('copy')`. For fallback, Thi
 
 ![fallback](https://gyazo.com/ad9e163f57f888b5d31d13ab6cec269a.png)
 
-
 Also you can overwrite fallback if you need.
 
 ```javascript
@@ -31,7 +30,6 @@ execCopy('this is copied text!!', function (str) {
   // do something when execCommand('copy') is not available
 })
 ```
-
 
 ## Sample
 

@@ -1,5 +1,3 @@
-/* eslint-env browser */
-
 var execCopy = require('../')
 // var execCopy = require('exec-copy')
 

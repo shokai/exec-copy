@@ -1,7 +1,5 @@
-/* eslint-env mocha */
-
-import execCopy from '../'
-import {assert} from 'chai'
+const execCopy = require('../')
+const { assert } = require('chai')
 
 describe('exec-copy', function () {
   it('should be a function', () => {
